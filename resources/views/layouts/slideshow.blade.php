@@ -155,7 +155,7 @@
             }
             ul li {
                 text-align: left;
-                margin: 5px 10px;
+                margin: 0px 0px;
                 color: rgba(44, 44, 44, 0.74) !important;
                 font-size: 11px;
             }
