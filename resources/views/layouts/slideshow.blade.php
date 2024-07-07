@@ -142,7 +142,7 @@
             font-size: 20px;
         }
         .gambarku {
-            max-height: 700px;
+            max-height: 550px;
         }
         @media (max-width: 900px) {
             #logo {

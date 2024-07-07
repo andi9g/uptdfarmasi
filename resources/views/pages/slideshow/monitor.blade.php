@@ -17,11 +17,13 @@
             font-size: 19pt
         @endif" class="carousel-container">
             @if (!empty($item->gambar))
+            <h2 class="animate__animated animate__fadeInDown mytext">
+                {{ $item->judul }}
+            </h2>
             <a href="{{ url('gambar/slideshow', [$item->gambar]) }}" target="_blank">
                 <img class="animate__animated animate__fadeInDown mt-3 gambarku" style="border-radius: 15px" src="{{ url('gambar/slideshow', [$item->gambar]) }}" width="100%" alt="">
             </a>
 
-                <br>
                 <br>
                 <br>
                 <br>
