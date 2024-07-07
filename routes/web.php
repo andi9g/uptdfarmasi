@@ -36,11 +36,3 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/', 'slideshowC@monitor');
-
-// Route::get('pdf', 'startController@pdf');
-
-Route::get('siswa/export/', 'startController@export');
-
-
-
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

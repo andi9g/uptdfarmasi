@@ -151,7 +151,7 @@
                 </td>
                 <td valign="justify">
                     <h5>PEMERINTAH PROVINSI KEPULAUAN RIAU</h5>
-                    <h4><b>DINAS KESEHATAN UPTD INSTALASI FARMASI</b></h4>
+                    <h4><b>UPTD INSTALASI FARMASI DINAS KESEHATAN PROVINSI KEPULAUAN RIAU</b></h4>
                     <p>Jl. Kesehatan No. 06 Kota Tanjungpinang Kepulauan Riau</p>
                 </td>
             </tr>
