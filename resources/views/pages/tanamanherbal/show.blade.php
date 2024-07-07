@@ -106,7 +106,7 @@
                     <thead>
                         <tr>
                             <th width="5px">No</th>
-                            <th>Nama Tanaman Herbal</th>Footer
+                            <th>Nama Tanaman Herbal</th>
                             <th>Nama Alias</th>
                             <th>Detail</th>
                             <th>Aksi</th>
