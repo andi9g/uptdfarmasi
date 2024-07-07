@@ -110,9 +110,17 @@
 
           <li class="nav-item">
             <a href="{{ url('slideshow', []) }}" class="nav-link @yield('warnaslideshow')">
-              <i class="nav-icon fas fa-database"></i>
+              <i class="nav-icon far fa-image"></i>
               <p>
                 Slide Show
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ url('tanamanherbal', []) }}" class="nav-link @yield('warnatanamanherbal')">
+              <i class="nav-icon fas fa-database"></i>
+              <p>
+                Tanaman Herbal
               </p>
             </a>
           </li>

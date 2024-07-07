@@ -33,6 +33,9 @@ Route::middleware(['auth'])->group(function () {
     //Slideshow
     Route::resource('slideshow', 'slideshowC');
 
+    //Tanaman Herbal
+    Route::resource('tanamanherbal', 'tanamanherbalC');
+
 });
 
 Route::get('/', 'slideshowC@monitor');
