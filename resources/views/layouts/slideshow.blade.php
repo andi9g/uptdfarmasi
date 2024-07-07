@@ -37,7 +37,7 @@
             padding: 10px 20px;
             font-size: 16px;
             background-color: #007bff;
-            color: white;
+            color: rgba(44, 44, 44, 0.74) !important;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -50,7 +50,7 @@
             padding: 10px 20px;
             font-size: 16px;
             background-color: #007bff;
-            color: white;
+            color: rgba(44, 44, 44, 0.74) !important;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -60,8 +60,9 @@
             position: fixed;
             top: 20px;
             left: 20px;
+            filter: blur(8);
             font-size: 16px;
-            color: white;
+            color: rgba(44, 44, 44, 0.74) !important;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -82,18 +83,34 @@
             background-color: #0056b3;
         }
         .carousel-container p{
-            color: white !important;
-            font-size: 16pt;
+            color: rgba(44, 44, 44, 0.74) !important;
+            font-size: 18pt;
             margin-bottom: 10px !important;
         }
         h2 {
             margin: 0;
             padding: 0;
+            color: rgba(44, 44, 44, 0.897) !important;
         }
         h3 {
             margin: 0;
             padding: 0;
         }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('gambar/bgku.jpeg');
+            background-size: cover;
+            background-position: top;
+            filter: blur(6px); /* Apply blur effect directly */
+            z-index: -1; /* Ensure it stays behind the content */
+            transform: scale(1.1);
+        }
+
+
         h4 {
             margin: 0;
             padding: 0;
@@ -104,14 +121,24 @@
         }
         #hero {
             overflow:hidden;
+            background: none;
         }
         p {
             margin: 0 !important;
             padding: 0 !important;
+            color: rgba(44, 44, 44, 0.74) !important;
         }
         ul li {
             text-align: left;
-            color: white;
+            margin: 10px 30px;
+            color: rgba(44, 44, 44, 0.74) !important;
+            font-size: 20px;
+        }
+        ol li {
+            /* font-weight: bold; */
+            text-align: left;
+            margin: 15px 30px;
+            color: rgba(44, 44, 44, 0.74) !important;
             font-size: 20px;
         }
         .gambarku {
@@ -122,20 +149,30 @@
                 display: none;
             }
             .carousel-container p{
-                color: white !important;
+                color: rgba(44, 44, 44, 0.74) !important;
                 font-size: 10pt;
                 margin-bottom: 10px !important;
             }
             ul li {
                 text-align: left;
-                color: white;
-                font-size: 10px;
+                margin: 5px 10px;
+                color: rgba(44, 44, 44, 0.74) !important;
+                font-size: 11px;
+            }
+            ol li {
+                /* font-weight: bold; */
+                text-align: left;
+                margin: 15px 10px;
+                color: rgba(44, 44, 44, 0.74) !important;
+                font-size: 13px;
             }
         }
+
   </style>
 </head>
 
 <body>
+    <div class="background"></div>
     <button id="fullscreen-btn" class="btn bg-secondary" onclick="toggleFullScreen()">
         <i class="fa fa-expand"></i>
     </button>
@@ -150,7 +187,7 @@
                     <img src="{{ url('gambar', ['kepri.png']) }}" width="100%" alt="">
                 </td>
                 <td valign="justify">
-                    <h5>PEMERINTAH PROVINSI KEPULAUAN RIAU</h5>
+                    <h5><b>PEMERINTAH PROVINSI KEPULAUAN RIAU</b></h5>
                     <h4><b>UPTD INSTALASI FARMASI DINAS KESEHATAN PROVINSI KEPULAUAN RIAU</b></h4>
                     <p>Jl. Kesehatan No. 06 Kota Tanjungpinang Kepulauan Riau</p>
                 </td>

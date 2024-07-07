@@ -3,7 +3,7 @@
 
 @section('content')
     <!-- ======= Hero Section ======= -->
-<section id="hero" class="d-flex flex-column justify-content-end align-items-center ukuran ">
+<section id="hero" class="d-flex flex-column justify-content-end align-items-center ukuran cover">
 
     <div id="heroCarousel" data-bs-interval="10000" class="carousel carousel-fade px-5" data-bs-ride="carousel">
 
@@ -81,15 +81,21 @@
         <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
       </defs>
       <g class="wave1">
-        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255, 123, 0, 0.427)">
       </g>
       <g class="wave2">
-        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255, 123, 0, 0.508)">
       </g>
       <g class="wave3">
-        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+        <use xlink:href="#wave-path" x="50" y="9" fill="rgba(0, 204, 255, 0.845)">
       </g>
     </svg>
 
 </section><!-- End Hero -->
 @endsection
+
+<style>
+    .coba {
+        color: rgba(0, 204, 255, 0.945);
+    }
+</style>
