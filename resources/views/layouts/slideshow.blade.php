@@ -105,7 +105,7 @@
             background-image: url('gambar/bgku.jpeg');
             background-size: cover;
             background-position: top;
-            filter: blur(6px); /* Apply blur effect directly */
+            filter: blur(7px); /* Apply blur effect directly */
             z-index: -1; /* Ensure it stays behind the content */
             transform: scale(1.1);
         }
