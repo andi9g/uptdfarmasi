@@ -69,17 +69,18 @@
         $i = 1;
     @endphp
     @foreach ($tanamanherbal as $item)
+
     @if ($i % 3 == 0)
         <div class="" style="page-break-before: always;"></div>
         @php
-            $i=1;
+            $i=2;
         @endphp
     @else
         @php
             $i++;
         @endphp
+
     @endif
-    {!! $i !!}
     <div class="kotak">
         <table width="100%" style="page-break-inside: avoid;">
             <tr>
