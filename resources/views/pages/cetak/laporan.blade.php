@@ -58,7 +58,7 @@
             padding: 0 10px;
         }
         .tabledetail tr td{
-            padding: 4 10px;
+            padding: 3 10px;
             text-align: left;
         }
 
