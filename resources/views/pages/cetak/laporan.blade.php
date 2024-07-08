@@ -15,7 +15,7 @@
             /* position: relative; */
             page-break-inside: avoid;
             width: 45%;
-            height: 150px;
+            height: auto;
             margin: 10px;
             padding: 10px;
             /* background: rgba(255, 81, 81, 0.589); */
