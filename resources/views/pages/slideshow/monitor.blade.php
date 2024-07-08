@@ -1,5 +1,10 @@
 @extends('layouts.slideshow')
 
+@section('tujuan')
+<a href="{{ url('/info', []) }}" class="badge bg-primary border-0" id="link">
+    Tanaman Herbal
+</a>
+@endsection
 
 @section('content')
     <!-- ======= Hero Section ======= -->

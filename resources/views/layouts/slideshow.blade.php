@@ -25,6 +25,14 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <style>
+    .tableku2 {
+        margin: 0;
+        padding: 0;
+    }
+    .tableku2 tr td {
+        font-size: 10pt;
+        padding: 3px 10px;
+    }
     .ukuran {
         height: 100vh !important;
         padding-top: -50px;
@@ -63,6 +71,19 @@
             filter: blur(8);
             font-size: 16px;
             color: rgba(44, 44, 44, 0.74) !important;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000; /* Pastikan tombol berada di atas elemen lainnya */
+        }
+
+        #link{
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            filter: blur(8);
+            font-size: 16px;
+            color: rgb(255, 255, 255) !important;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -179,6 +200,7 @@
     <a href="{{ url('login', []) }}" class="btn bg-secondary" id="sign-in">
         <i class="fa fa-sign-in"></i>
     </a>
+    @yield('tujuan')
 
     <div id="logo">
         <table width="100%" border="0">

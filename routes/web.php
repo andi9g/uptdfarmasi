@@ -41,3 +41,4 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/', 'slideshowC@monitor');
+Route::get('/info', 'slideshowC@info');

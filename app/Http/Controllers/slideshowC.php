@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\slideshowM;
+use App\Models\tanamanherbalM;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -23,6 +24,20 @@ class slideshowC extends Controller
 
         return view("pages.slideshow.show", [
             "slideshow" => $slideshow,
+            "keyword" => $keyword,
+        ]);
+    }
+
+    public function info(Request $request)
+    {
+        $keyword = empty($request->keyword)?'':$request->keyword;
+
+        $tanamanherbal = tanamanherbalM::where("namatanamanherbal", "like", "%$keyword%")
+        ->orWhere("namalain", "like", "%$keyword%")
+        ->get();
+
+        return view("pages.slideshow.infoherbal", [
+            "tanamanherbal" => $tanamanherbal,
             "keyword" => $keyword,
         ]);
     }
