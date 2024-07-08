@@ -9,17 +9,18 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 12pt;
+            margin: 0;
         }
         .kotak {
             display: inline-block;
-            /* position: relative; */
-            /* page-break-inside: avoid; */
+            page-break-inside: avoid;
             width: 45%;
-            height: auto;
             margin: 10px;
             padding: 10px;
             /* background: rgba(255, 81, 81, 0.589); */
             text-align: center;
+            box-sizing: border-box;
+            vertical-align: top;
         }
         h1, h2, h3, h4, h5, p {
             margin: 0;
@@ -57,7 +58,7 @@
             padding: 0 10px;
         }
         .tabledetail tr td{
-            padding: 3 10px;
+            padding: 4 10px;
             text-align: left;
         }
 
@@ -65,8 +66,11 @@
 </head>
 <body>
     @foreach ($tanamanherbal as $item)
+    @if ($loop->iteration % 3 == 0)
+        <div class="" style="page-break-before: always;"></div>
+    @endif
     <div class="kotak">
-        <table width="100%">
+        <table width="100%" style="page-break-inside: avoid;">
             <tr>
                 <td class="bg-hijau"><h3>{{ $item->namatanamanherbal }}</h3></td>
             </tr>
