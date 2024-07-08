@@ -79,6 +79,7 @@
             $i++;
         @endphp
     @endif
+    {!! $i !!}
     <div class="kotak">
         <table width="100%" style="page-break-inside: avoid;">
             <tr>
