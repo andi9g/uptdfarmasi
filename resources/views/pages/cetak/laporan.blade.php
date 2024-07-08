@@ -90,7 +90,7 @@
             <tr>
                 <td>
                     <img src="{{ url('gambar/tanamanherbal', [$item->gambar]) }}" style="max-height: 150px;" alt=""><br>
-                    <p>{{ $item->deskripsi }}</p>
+                    <small style="padding: 3px 7px">{{ $item->deskripsi }}</small>
                 </td>
             </tr>
             <tr>
