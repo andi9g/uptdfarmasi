@@ -35,6 +35,8 @@ Route::middleware(['auth'])->group(function () {
 
     //Tanaman Herbal
     Route::resource('tanamanherbal', 'tanamanherbalC');
+    //cetak
+    Route::get('cetak/tanamanherbal', 'tanamanherbalC@cetak')->name("cetak.tanamanherbal");
 
 });
 

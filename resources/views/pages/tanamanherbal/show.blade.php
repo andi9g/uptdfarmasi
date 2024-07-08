@@ -37,6 +37,10 @@
                     <h5 class="card-title">Detail Tanaman Herbal <small>( - ) Jika tidak ada</small></h5><br>
 
                     <div class="form-group">
+                        <label for="klasifikasi">klasifikasi</label>
+                        <input required id="klasifikasi" required class="form-control" type="text" name="klasifikasi" placeholder="contoh : TAKSONOMI">
+                    </div>
+                    <div class="form-group">
                         <label for="superkerajaan">Superkerajaan</label>
                         <input required id="superkerajaan" class="form-control" type="text" name="superkerajaan">
                     </div>
@@ -84,6 +88,13 @@
             <div class="row">
                 <div class="col-md-8">
                     <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#tambahtanamanherbal">Tambah Tanaman Herbal</button>
+
+                    <form action="{{ route('cetak.tanamanherbal', []) }}" method="get" class="d-inline">
+                        <input type="text" value="{{ $keyword }}" name="keyword" hidden>
+                        <button type="submit" class="btn btn-secondary">
+                            <i class="fa fa-print"></i> Cetak
+                        </button>
+                    </form>
                 </div>
                 <div class="col-md-4">
                     <form action="{{ url()->current() }}">
@@ -154,6 +165,11 @@
                                             <img src="{{ url('gambar/tanamanherbal', [$item->gambar]) }}" style="max-height: 200px" alt="">
                                             <p class="m-0 p-0">{{ $item->deskripsi }}</p>
                                             <hr>
+
+                                            <div class="form-group">
+                                                <label for="klasifikasi">klasifikasi</label>
+                                                <input required id="klasifikasi" readonly class="form-control text-center" type="text" name="klasifikasi" value="{{ $item->klasifikasi }}" placeholder="contoh : TAKSONOMI">
+                                            </div>
 
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
@@ -234,11 +250,16 @@
 
                                                 <div class="form-group">
                                                     <label for="gambar">Gambar <small class="text-danger">jpg/png</small></label>
-                                                    <input id="gambar" required class="form-control" type="file" name="gambar">
+                                                    <input id="gambar" class="form-control" type="file" name="gambar">
                                                 </div>
 
                                                 <hr>
                                                 <h5 class="card-title">Detail Tanaman Herbal <small>( - ) Jika tidak ada</small></h5><br>
+
+                                                <div class="form-group">
+                                                    <label for="klasifikasi">Klasifikasi</label>
+                                                    <input required id="klasifikasi" style="background: rgb(183, 255, 183)" required class="form-control" type="text" name="klasifikasi" value="{{ $item->klasifikasi }}" placeholder="contoh : TAKSONOMI">
+                                                </div>
 
                                                 <div class="form-group">
                                                     <label for="superkerajaan">Superkerajaan</label>
@@ -287,6 +308,10 @@
             </div>
 
         </div>
+        <div class="card-footer">
+            {{ $tanamanherbal->links("vendor.pagination.bootstrap-4") }}
+        </div>
+
     </div>
 
 </div>

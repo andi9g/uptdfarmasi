@@ -19,6 +19,7 @@ class Produk extends Migration
             $table->String('namalain')->nullable();
             $table->String('gambar');
             $table->String('deskripsi');
+            $table->String('klasifikasi');
             $table->String('superkerajaan');
             $table->String('kerajaan');
             $table->String('divisi');

@@ -189,7 +189,7 @@
                 <td valign="justify">
                     <h5><b>PEMERINTAH PROVINSI KEPULAUAN RIAU</b></h5>
                     <h4><b>UPTD INSTALASI FARMASI DINAS KESEHATAN PROVINSI KEPULAUAN RIAU</b></h4>
-                    <p>Jl. Kesehatan No. 06 Kota Tanjungpinang Kepulauan Riau</p>
+                    <p>Pusat Pemerintahan Provinsi Kepulauan Riau Istana Kota Piring Gedung Sultan Mahmud Riyat Syah Tanjungpinang - Pulau Dompak Provinsi Kepulauan Riau</p>
                 </td>
             </tr>
         </table>

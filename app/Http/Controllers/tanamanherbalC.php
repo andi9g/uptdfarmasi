@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\tanamanherbalM;
+use Barryvdh\DomPDF\Facade\Pdf as PDF;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 
@@ -33,9 +34,21 @@ class tanamanherbalC extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function cetak(Request $request)
     {
-        //
+        $keyword = empty($request->keyword)?'':$request->keyword;
+        $tanamanherbal = tanamanherbalM::where("namatanamanherbal", "like", "%$keyword%")
+        ->orWhere("namalain", "like", "%$keyword%")
+        ->orderBy("namatanamanherbal", "asc")
+        ->get();
+        // dd($tanamanherbal);
+
+        $pdf = PDF::loadView("pages.cetak.laporan", [
+            "tanamanherbal" => $tanamanherbal,
+        ])->setPaper('A4', 'landscape');
+
+
+        return $pdf->stream("tanamanherbal.pdf");
     }
 
     /**
