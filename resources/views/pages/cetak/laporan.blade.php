@@ -13,6 +13,7 @@
         .kotak {
             display: inline-block;
             /* position: relative; */
+            page-break-inside: avoid;
             width: 45%;
             height: 150px;
             margin: 10px;
