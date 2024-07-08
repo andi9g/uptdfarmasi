@@ -8,7 +8,7 @@
 @endsection
 
 @section('content')
-<section id="testimonials" class="testimonials mt-5">
+<section id="testimonials" class="testimonials">
     <div class="container">
 
 

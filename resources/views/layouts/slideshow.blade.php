@@ -76,6 +76,9 @@
             cursor: pointer;
             z-index: 1000; /* Pastikan tombol berada di atas elemen lainnya */
         }
+        .testimonials {
+            margin-top : 50px;
+        }
 
         #link{
             position: fixed;
@@ -173,6 +176,9 @@
                 color: rgba(44, 44, 44, 0.74) !important;
                 font-size: 10pt;
                 margin-bottom: 10px !important;
+            }
+            .testimonials {
+                margin-top : 0px;
             }
             ul li {
                 text-align: left;
