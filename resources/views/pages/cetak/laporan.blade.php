@@ -101,17 +101,7 @@
             <tr>
                 <td>
                     <table width="100%" class="tabledetail" border="0">
-                        <tr>
-                            <td valign="top" style="text-transform: capitalize" width="40%">asal</td>
-                            <td valign="top">{{ $item->asal }}</td>
-                        </tr>
-                        @if (empty($item->namadaerah))
-                        <tr>
-                            <td valign="top" style="text-transform: capitalize" width="40%">nama daerah</td>
-                            <td valign="top">{{ $item->namadaerah }}</td>
-                        </tr>
 
-                        @endif
                         <tr>
                             <td valign="top" style="text-transform: capitalize" width="40%">superkerajaan</td>
                             <td valign="top">{{ $item->superkerajaan }}</td>
@@ -141,8 +131,19 @@
                             <td valign="top">{{ $item->spesies }}</td>
                         </tr>
                         <tr style="border:none">
-                            <td valign="top" style="text-transform: capitalize" width="40%">khasiat</td>
+                            <td valign="top" style="text-transform: capitalize" width="40%">Manfaat</td>
                             <td valign="top">{{ $item->khasiat }}</td>
+                        </tr>
+                        @if (empty($item->namadaerah))
+                        <tr>
+                            <td valign="top" style="text-transform: capitalize" width="40%">nama daerah</td>
+                            <td valign="top">{{ $item->namadaerah }}</td>
+                        </tr>
+
+                        @endif
+                        <tr style="border:none">
+                            <td valign="top" style="text-transform: capitalize" width="40%">Bagian yang Digunakan</td>
+                            <td valign="top">{{ $item->bagianyangdigunakan }}</td>
                         </tr>
 
                     </table>

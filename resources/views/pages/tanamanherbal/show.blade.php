@@ -69,16 +69,16 @@
                         <input required id="spesies" class="form-control" type="text" name="spesies">
                     </div>
                     <div class="form-group">
-                        <label for="khasiat" class="text-capitalize">khasiat</label>
+                        <label for="khasiat" class="text-capitalize">Manfaat</label>
                         <input required id="khasiat" class="form-control" type="text" name="khasiat">
-                    </div>
-                    <div class="form-group">
-                        <label for="asal" class="text-capitalize">asal</label>
-                        <input  id="asal" class="form-control" type="text" name="asal">
                     </div>
                     <div class="form-group">
                         <label for="namadaerah" class="text-capitalize">nama daerah</label>
                         <input  id="namadaerah" class="form-control" type="text" name="namadaerah">
+                    </div>
+                    <div class="form-group">
+                        <label for="bagianyangdigunakan" class="text-capitalize">Bagian yang digunakan</label>
+                        <input  id="bagianyangdigunakan" class="form-control" type="text" name="bagianyangdigunakan">
                     </div>
 
                 </div>
@@ -229,9 +229,9 @@
                                             </div>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text text-capitalize bg-light" id="asal">asal</span>
+                                                    <span class="input-group-text text-capitalize bg-light" id="asal">bagianyangdigunakan</span>
                                                 </div>
-                                                <input class="form-control" type="text" name="" readonly placeholder="Recipient's text" aria-label="Recipient's text" aria-describedby="asal" value="{{ $item->asal }}">
+                                                <input class="form-control" type="text" name="" readonly placeholder="Recipient's text" aria-label="Recipient's text" aria-describedby="bagianyangdigunakan" value="{{ $item->bagianyangdigunakan }}">
                                             </div>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
@@ -321,8 +321,8 @@
                                                     <input required id="khasiat" class="form-control" type="text" value="{{ $item->khasiat }}" name="khasiat">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="asal" class="text-capitalize">asal</label>
-                                                    <input id="asal" class="form-control" type="text" value="{{ $item->asal }}" name="asal">
+                                                    <label for="bagianyangdigunakan" class="text-capitalize">bagianyangdigunakan</label>
+                                                    <input id="bagianyangdigunakan" class="form-control" type="text" value="{{ $item->bagianyangdigunakan }}" name="bagianyangdigunakan">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="namadaerah" class="text-capitalize">nama daerah</label>
