@@ -18,14 +18,14 @@
 
             @foreach ($tanamanherbal as $item)
                 <div class="swiper-slide" role="group" aria-label="3 / 5" style="width: 451px;height: auto; margin-right: 20px;" data-swiper-slide-index="1">
-                    <div class="testimonial-item bg-light" style="border-radius: 15px;min-height: 620px;box-shadow:2px 3px 2px rgba(169, 169, 169, 0.671);border-top:3px solid rgba(255, 136, 0, 0.808)">
+                    <div class="testimonial-item bg-light" style="border-radius: 15px;min-height: 645px;box-shadow:2px 3px 2px rgba(169, 169, 169, 0.671);border-top:3px solid rgba(255, 136, 0, 0.808)">
                         <h3>{{ $item->namatanamanherbal }}</h3>
                         <p>
                             <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                             {{ $item->namalain }}
                             <i class="bx bxs-quote-alt-right quote-icon-left pl-2"></i>
                         </p>
-                        <img src="{{ url('gambar/tanamanherbal', [$item->gambar]) }}" class="mt-2" style="max-height: 140px;border-radius: 10px;border:1px solid lightgrey" alt="">
+                        <img src="{{ url('gambar/tanamanherbal', [$item->gambar]) }}" class="mt-2" style="max-height: 120px;border-radius: 10px;border:1px solid lightgrey" alt="">
                         <p style="line-height: 19px">
                             <small>
                                 {{ $item->deskripsi }}
