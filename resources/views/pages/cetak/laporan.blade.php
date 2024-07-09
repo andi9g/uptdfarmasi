@@ -102,6 +102,14 @@
                 <td>
                     <table width="100%" class="tabledetail" border="0">
                         <tr>
+                            <td valign="top" style="text-transform: capitalize" width="40%">asal</td>
+                            <td valign="top">{{ $item->asal }}</td>
+                        </tr>
+                        <tr>
+                            <td valign="top" style="text-transform: capitalize" width="40%">nama daerah</td>
+                            <td valign="top">{{ $item->namadaerah }}</td>
+                        </tr>
+                        <tr>
                             <td valign="top" style="text-transform: capitalize" width="40%">superkerajaan</td>
                             <td valign="top">{{ $item->superkerajaan }}</td>
                         </tr>

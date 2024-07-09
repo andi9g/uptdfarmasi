@@ -72,6 +72,14 @@
                         <label for="khasiat" class="text-capitalize">khasiat</label>
                         <input required id="khasiat" class="form-control" type="text" name="khasiat">
                     </div>
+                    <div class="form-group">
+                        <label for="asal" class="text-capitalize">asal</label>
+                        <input required id="asal" class="form-control" type="text" name="asal">
+                    </div>
+                    <div class="form-group">
+                        <label for="namadaerah" class="text-capitalize">nama daerah</label>
+                        <input required id="namadaerah" class="form-control" type="text" name="namadaerah">
+                    </div>
 
                 </div>
                 <div class="modal-footer">
@@ -213,7 +221,26 @@
                                                 </div>
                                                 <input class="form-control" type="text" name="" readonly placeholder="Recipient's text" aria-label="Recipient's text" aria-describedby="khasiat" value="{{ $item->khasiat }}">
                                             </div>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text text-capitalize bg-light" id="spesies">spesies</span>
+                                                </div>
+                                                <input class="form-control" type="text" name="" readonly placeholder="Recipient's text" aria-label="Recipient's text" aria-describedby="spesies" value="{{ $item->spesies }}">
+                                            </div>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text text-capitalize bg-light" id="asal">asal</span>
+                                                </div>
+                                                <input class="form-control" type="text" name="" readonly placeholder="Recipient's text" aria-label="Recipient's text" aria-describedby="asal" value="{{ $item->asal }}">
+                                            </div>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text text-capitalize bg-light" id="namadaerah">nama daerah</span>
+                                                </div>
+                                                <input class="form-control" type="text" name="" readonly placeholder="Recipient's text" aria-label="Recipient's text" aria-describedby="namadaerah" value="{{ $item->namadaerah }}">
+                                            </div>
                                         </div>
+
                                         <div class="modal-footer">
                                             <button class="btn btn-secondary" data-dismiss="modal" aria-label="Close">
                                                 Close
@@ -292,6 +319,14 @@
                                                 <div class="form-group">
                                                     <label for="khasiat" class="text-capitalize">khasiat</label>
                                                     <input required id="khasiat" class="form-control" type="text" value="{{ $item->khasiat }}" name="khasiat">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="asal" class="text-capitalize">asal</label>
+                                                    <input required id="asal" class="form-control" type="text" value="{{ $item->asal }}" name="asal">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="namadaerah" class="text-capitalize">nama daerah</label>
+                                                    <input required id="namadaerah" class="form-control" type="text" value="{{ $item->namadaerah }}" name="namadaerah">
                                                 </div>
 
                                             </div>
