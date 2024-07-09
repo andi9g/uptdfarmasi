@@ -59,6 +59,7 @@
         }
         .tabledetail tr td{
             padding: 3 10px;
+            font-size: 9pt;
             text-align: left;
         }
 
