@@ -74,11 +74,11 @@
                     </div>
                     <div class="form-group">
                         <label for="asal" class="text-capitalize">asal</label>
-                        <input required id="asal" class="form-control" type="text" name="asal">
+                        <input  id="asal" class="form-control" type="text" name="asal">
                     </div>
                     <div class="form-group">
                         <label for="namadaerah" class="text-capitalize">nama daerah</label>
-                        <input required id="namadaerah" class="form-control" type="text" name="namadaerah">
+                        <input  id="namadaerah" class="form-control" type="text" name="namadaerah">
                     </div>
 
                 </div>
@@ -322,11 +322,11 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="asal" class="text-capitalize">asal</label>
-                                                    <input required id="asal" class="form-control" type="text" value="{{ $item->asal }}" name="asal">
+                                                    <input id="asal" class="form-control" type="text" value="{{ $item->asal }}" name="asal">
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="namadaerah" class="text-capitalize">nama daerah</label>
-                                                    <input required id="namadaerah" class="form-control" type="text" value="{{ $item->namadaerah }}" name="namadaerah">
+                                                    <input id="namadaerah" class="form-control" type="text" value="{{ $item->namadaerah }}" name="namadaerah">
                                                 </div>
 
                                             </div>
