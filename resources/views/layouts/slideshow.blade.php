@@ -30,7 +30,7 @@
         padding: 0;
     }
     .tableku2 tr td {
-        font-size: 10pt;
+        font-size: 9.5pt;
         padding: 3px 10px;
     }
     .ukuran {

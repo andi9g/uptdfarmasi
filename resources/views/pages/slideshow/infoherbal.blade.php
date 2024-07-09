@@ -68,6 +68,14 @@
                                 <td width="38%" class="text-capitalize" valign="top" align="left">khasiat</td>
                                 <td valign="top" align="left">{{ $item->khasiat }}</td>
                             </tr>
+                            <tr>
+                                <td width="38%" class="text-capitalize" valign="top" align="left">namadaerah</td>
+                                <td valign="top" align="left">{{ $item->namadaerah }}</td>
+                            </tr>
+                            <tr>
+                                <td width="38%" class="text-capitalize" valign="top" align="left">Bagian yang Digunakan</td>
+                                <td valign="top" align="left">{{ $item->bagianyangdigunakan }}</td>
+                            </tr>
 
                         </table>
                     </div>
