@@ -59,7 +59,7 @@
         }
         .tabledetail tr td{
             padding: 3 10px;
-            font-size: 9pt;
+            font-size: 10pt;
             text-align: left;
         }
 
@@ -131,17 +131,14 @@
                             <td valign="top" style="text-transform: capitalize" width="40%">spesies</td>
                             <td valign="top">{{ $item->spesies }}</td>
                         </tr>
-                        <tr style="border:none">
+                        <tr>
                             <td valign="top" style="text-transform: capitalize" width="40%">Manfaat</td>
                             <td valign="top">{{ $item->khasiat }}</td>
                         </tr>
-                        @if (empty($item->namadaerah))
                         <tr>
                             <td valign="top" style="text-transform: capitalize" width="40%">nama daerah</td>
                             <td valign="top">{{ $item->namadaerah }}</td>
                         </tr>
-
-                        @endif
                         <tr style="border:none">
                             <td valign="top" style="text-transform: capitalize" width="40%">Bagian yang Digunakan</td>
                             <td valign="top">{{ $item->bagianyangdigunakan }}</td>
