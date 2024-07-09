@@ -105,10 +105,13 @@
                             <td valign="top" style="text-transform: capitalize" width="40%">asal</td>
                             <td valign="top">{{ $item->asal }}</td>
                         </tr>
+                        @if (empty($item->namadaerah))
                         <tr>
                             <td valign="top" style="text-transform: capitalize" width="40%">nama daerah</td>
                             <td valign="top">{{ $item->namadaerah }}</td>
                         </tr>
+
+                        @endif
                         <tr>
                             <td valign="top" style="text-transform: capitalize" width="40%">superkerajaan</td>
                             <td valign="top">{{ $item->superkerajaan }}</td>
