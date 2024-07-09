@@ -25,7 +25,7 @@
                             {{ $item->namalain }}
                             <i class="bx bxs-quote-alt-right quote-icon-left pl-2"></i>
                         </p>
-                        <img src="{{ url('gambar/tanamanherbal', [$item->gambar]) }}" class="mt-2" style="max-height: 120px;border-radius: 10px;border:1px solid lightgrey" alt="">
+                        <img src="{{ url('gambar/tanamanherbal', [$item->gambar]) }}" class="mt-2" style="max-height: 140px;border-radius: 10px;border:1px solid lightgrey" alt="">
                         <p style="line-height: 19px">
                             <small>
                                 {{ $item->deskripsi }}
