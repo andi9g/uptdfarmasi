@@ -217,7 +217,7 @@
                                             </div>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text text-capitalize bg-light" id="khasiat">khasiat</span>
+                                                    <span class="input-group-text text-capitalize bg-light" id="khasiat">Manfaat</span>
                                                 </div>
                                                 <input class="form-control" type="text" name="" readonly placeholder="Recipient's text" aria-label="Recipient's text" aria-describedby="khasiat" value="{{ $item->khasiat }}">
                                             </div>
@@ -229,7 +229,7 @@
                                             </div>
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text text-capitalize bg-light" id="asal">bagianyangdigunakan</span>
+                                                    <span class="input-group-text text-capitalize bg-light" id="asal">bagian yang digunakan</span>
                                                 </div>
                                                 <input class="form-control" type="text" name="" readonly placeholder="Recipient's text" aria-label="Recipient's text" aria-describedby="bagianyangdigunakan" value="{{ $item->bagianyangdigunakan }}">
                                             </div>
